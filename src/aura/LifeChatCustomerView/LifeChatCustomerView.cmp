@@ -1,0 +1,5 @@
+<aura:component controller="LifeChatCustomerView" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <aura:attribute name="targetContact" type="Contact" />
+    <force:recordView recordId="{!v.targetContact.Id}"/>
+</aura:component>

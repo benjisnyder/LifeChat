@@ -1,0 +1,39 @@
+.THIS {
+    position: relative;
+    margin: 0 20% 15px 35px;
+    padding: 10px 15px;
+	background: #D8DDE6;
+    border-radius: 12px;
+    color: #16325C;
+}
+
+.THIS:after {
+    content:'C';
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    top: 6px;
+    left: -35px;
+    border: 1px solid #D8DDE6;
+    border-radius: 40px;
+    font-size: 13px;
+    line-height: 25px;
+    text-align: center;
+    background: #D8DDE6;
+    color: #16325C;
+}
+
+.THIS.lc-message__agent {
+    margin: 0 35px 15px 20%;
+	background: #168BF9;
+    color: #fff;
+}
+
+.THIS.lc-message__agent:after {
+    content: 'A';
+    right: -35px;
+    left: auto;
+    border: none;
+    background: #168BF9;
+    color: #fff;
+}

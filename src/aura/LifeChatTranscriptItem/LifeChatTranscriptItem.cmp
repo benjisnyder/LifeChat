@@ -1,0 +1,7 @@
+<aura:component >
+    <aura:attribute name="textMessage" type="String" description="The text part of the message" />
+    <aura:attribute name="isAgent" type="Boolean" default="true" />
+    <div class="{! v.isAgent ? 'lc-message__agent' : 'lc-message__customer'}">
+		{!v.textMessage}
+    </div>
+</aura:component>

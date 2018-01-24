@@ -1,0 +1,17 @@
+<aura:component controller="LifeChatTranscript" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+	
+    <aura:attribute name="case" type="Case" description="The target case." />
+    <aura:attribute name="transcript" type="Object[]" description="An array of transcript objects." />
+    
+    <div class="slds-form-element__control">
+        <ui:inputText aura:id="lc-transcript-input" class="slds-input" placeholder="Your message" updateOn="keyup" keyup="{!c.sendMessage}" />
+        <!--input aura:id="lc-transcript-input" type="text" class="slds-input" placeholder="Your message" onkeydown="{!c.sendMessage}" /-->
+    </div>
+    <div class="lc-transcript">
+        <aura:iteration items="{!v.transcript}" var="item">
+            <c:LifeChatTranscriptItem textMessage="{!item.Body__c}" isAgent="{!item.From_Agent__c}" />
+        </aura:iteration>
+    </div>
+
+</aura:component>

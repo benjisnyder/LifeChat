@@ -1,0 +1,9 @@
+.THIS.lc-transcript {
+	height: 565px;
+    padding: 15px 0 0;
+    overflow: auto;
+}
+
+.THIS .slds-input {
+    line-height: 2.4rem;
+}

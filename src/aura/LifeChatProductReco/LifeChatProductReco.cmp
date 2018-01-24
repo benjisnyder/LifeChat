@@ -1,0 +1,26 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="match" type="Boolean" description="The product match in object form." default="true"/>
+    <lightning:card >
+        <p class="slds-p-horizontal_small">
+            <aura:if isTrue="{! v.match }">
+                <div class="slds-media">
+                    <div class="slds-media__figure">
+                        <img src="{!$Resource.temp_samsungtv}"/>
+                    </div>
+                    <div class="slds-media__body">
+                        <h3 class="slds-text-heading_small"><a href="">Samsung MU6500 Curved 4K UHD</a></h3>
+                        <span>$800</span> <span class="lc-list-data">4 year limited warranty</span>
+                        <div class="lc-button-row">
+                        	<lightning:button variant="neutral" label="Place Order" />
+                        	<lightning:button class="lc-row-button" variant="base" label="Lookup" />
+                        </div>
+                    </div>
+                </div>
+                <aura:set attribute="else">
+                    <h3 class="slds-text-heading_small">No Product Detected</h3>
+                    <lightning:button variant="base" label="Lookup" />
+                </aura:set>
+            </aura:if>
+        </p>
+    </lightning:card>
+</aura:component>

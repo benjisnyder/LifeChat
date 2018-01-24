@@ -1,0 +1,121 @@
+.THIS .lc-map-data {
+	position: absolute;
+    bottom: 0;
+	left: 0;    
+}
+
+.THIS .lc-title-image {
+    position: relative;
+    text-align: center;
+}
+
+.THIS .lc-title-image {
+    width: 312px;
+    margin: 23px auto;
+}
+
+.THIS .ring-container {
+    position: absolute;
+    top: 10px;
+    left: 220px;
+}
+
+.THIS .ring-container:nth-child(1) {
+    top: 20px;
+}
+
+.THIS .ring-container:nth-child(2) {
+    top: 45px;
+    left: 50px;
+}
+
+.THIS .ring-container:nth-child(3) {
+    top: 59px;
+    left: 129px;
+}
+
+.THIS .ring-container:nth-child(4) {
+    top: 127px;
+    left: 4px;
+}
+
+.THIS .ring-container:nth-child(5) {
+    top: 8px;
+    left: 78px;
+}
+
+.THIS .ring-container:nth-child(6) {
+    top: 110px;
+    left: 40px;
+}
+
+.THIS .ring-container:nth-child(7) {
+    top: 47px;
+    left: 45px;
+}
+
+.THIS .circle {
+    width: 5px;
+    height: 5px;
+    background-color: #bd2219;
+    border-radius: 50%;
+    position: absolute;
+    top: 23px;
+    left: 23px;
+}
+
+.THIS .ringring {
+    border: 3px solid #bd2219;
+    border-radius: 30px;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    -webkit-animation: pulsate 5s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.0
+}
+
+.THIS .ring-customer {
+    top: 117px;
+    left: 230px;
+}
+
+.THIS .ring-customer .circle {
+    background-color: #40bd19;
+}
+
+.THIS .ring-customer .ringring {
+    border-color: #40bd19;
+    -webkit-animation: pulsate 2s ease-out;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
+.THIS .lc-associate-list {
+    height: 445px;
+    overflow: auto;
+}
+
+.THIS .lc-associate-list-item {
+    position: relative;
+    padding: 0 0 0 50px;
+    margin: 0 0 10px;
+}
+
+.THIS .lc-associate-dropdown {
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.THIS .lc-associate-list-data {
+    margin: 0 0 0 15px;
+    color: #6b6d70;
+}

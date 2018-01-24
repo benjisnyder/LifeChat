@@ -1,0 +1,91 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<lightning:card >
+        <aura:set attribute="title">
+		    Store #56782 (<a href="https://www.google.com/maps/place/Best+Buy/@42.522496,-82.9250307,17z/data=!3m2!4b1!5s0x8824d864196fa373:0xa1d65d6b1dea385b!4m5!3m4!1s0x8824d86489fd3b5b:0x79c8a1cbeea057ce!8m2!3d42.522496!4d-82.922842">Roseville, MI</a>)
+        </aura:set>
+        <p class="slds-p-horizontal_small">
+            <div class="lc-title-image">
+                <img class="lc-map" src="{!$Resource.temp_floorplan}"/>
+                <div class="ring-container"><div class="ringring"></div><div class="circle"></div></div>
+                <div class="ring-container"><div class="ringring"></div><div class="circle"></div></div>
+                <div class="ring-container"><div class="ringring"></div><div class="circle"></div></div>
+                <div class="ring-container"><div class="ringring"></div><div class="circle"></div></div>
+                <div class="ring-container"><div class="ringring"></div><div class="circle"></div></div>
+                <div class="ring-container"><div class="ringring"></div><div class="circle"></div></div>
+                <div class="ring-container"><div class="ringring"></div><div class="circle"></div></div>
+                <div class="ring-container ring-customer"><div class="ringring"></div><div class="circle"></div></div>
+                <!--div class="lc-map-data">
+                    <button class="slds-button slds-button_neutral">Expand Map</button>
+                </div-->
+            </div>
+            <h3 class="slds-text-heading_small slds-m-bottom_medium">Available Associates (7)</h3>
+            <ol class="lc-associate-list">
+                <!-- TODO: create associate object and loop through them using force:recordData, probably make Associate items a cmp -->
+                <li class="lc-associate-list-item">
+                    <h3 class="slds-text-heading_small"><a href="">Robert Allen</a></h3>
+                    <span>Electronics</span> <span class="lc-associate-list-data">7 hrs left in shift</span>
+                    <lightning:buttonMenu class="lc-associate-dropdown" iconName="utility:down" alternativeText="Options">
+                        <lightning:menuItem label="Message" value="" />
+                        <lightning:menuItem label="Get Location" value=""/>
+                        <lightning:menuItem label="Assign" value="" />
+                    </lightning:buttonMenu>
+                </li>
+                <li class="lc-associate-list-item">
+                    <h3 class="slds-text-heading_small"><a href="">Germain Apotate</a></h3>
+                    <span>Games</span> <span class="lc-associate-list-data">6 hrs left in shift</span>
+                    <lightning:buttonMenu class="lc-associate-dropdown" iconName="utility:down" alternativeText="Options">
+                        <lightning:menuItem label="Message" value="" />
+                        <lightning:menuItem label="Get Location" value=""/>
+                        <lightning:menuItem label="Assign" value="" />
+                    </lightning:buttonMenu>
+                </li>
+                <li class="lc-associate-list-item">
+                    <h3 class="slds-text-heading_small"><a href="">James Delaro Compton</a></h3>
+                    <span>Electronics</span> <span class="lc-associate-list-data">30 mins left in shift</span>
+                    <lightning:buttonMenu class="lc-associate-dropdown" iconName="utility:down" alternativeText="Options">
+                        <lightning:menuItem label="Message" value="" />
+                        <lightning:menuItem label="Get Location" value=""/>
+                        <lightning:menuItem label="Assign" value="" />
+                    </lightning:buttonMenu>
+                </li>
+                
+                <li class="lc-associate-list-item">
+                    <h3 class="slds-text-heading_small"><a href="">Steve Dohtry</a></h3>
+                    <span>Appliances</span> <span class="lc-associate-list-data">1 hr left in shift</span>
+                    <lightning:buttonMenu class="lc-associate-dropdown" iconName="utility:down" alternativeText="Options">
+                        <lightning:menuItem label="Message" value="" />
+                        <lightning:menuItem label="Get Location" value=""/>
+                        <lightning:menuItem label="Assign" value="" />
+                    </lightning:buttonMenu>
+                </li>
+                <li class="lc-associate-list-item">
+                    <h3 class="slds-text-heading_small"><a href="">Erin L. Frances</a></h3>
+                    <span>Office Equipment</span> <span class="lc-associate-list-data">2 hrs left in shift</span>
+                    <lightning:buttonMenu class="lc-associate-dropdown" iconName="utility:down" alternativeText="Options">
+                        <lightning:menuItem label="Message" value="" />
+                        <lightning:menuItem label="Get Location" value=""/>
+                        <lightning:menuItem label="Assign" value="" />
+                    </lightning:buttonMenu>
+                </li>
+                <li class="lc-associate-list-item">
+                    <h3 class="slds-text-heading_small"><a href="">Jane Smith</a></h3>
+                    <span>Electronics</span> <span class="lc-associate-list-data">2 hrs left in shift</span>
+                    <lightning:buttonMenu class="lc-associate-dropdown" iconName="utility:down" alternativeText="Options">
+                        <lightning:menuItem label="Message" value="" />
+                        <lightning:menuItem label="Get Location" value=""/>
+                        <lightning:menuItem label="Assign" value="" />
+                    </lightning:buttonMenu>
+                </li>
+                <li class="lc-associate-list-item">
+                    <h3 class="slds-text-heading_small"><a href="">Arvind Rupta</a></h3>
+                    <span>Appliances</span> <span class="lc-associate-list-data">On lunch</span>
+                    <lightning:buttonMenu class="lc-associate-dropdown" iconName="utility:down" alternativeText="Options">
+                        <lightning:menuItem label="Message" value="" />
+                        <lightning:menuItem label="Get Location" value=""/>
+                        <lightning:menuItem label="Assign" value="" />
+                    </lightning:buttonMenu>
+                </li>
+            </ol>
+        </p>
+    </lightning:card>
+</aura:component>

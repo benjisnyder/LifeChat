@@ -1,0 +1,16 @@
+.THIS {
+    min-height: 120px;
+}
+
+.THIS .lc-list-data {
+    margin: 0 0 0 15px;
+    color: #6b6d70;
+}
+
+.THIS .lc-button-row {
+    padding: 10px 0 0;
+}
+
+.THIS .lc-row-button {
+    margin: 0 0 0 15px;
+}
